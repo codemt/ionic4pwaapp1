@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Students</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list>
+        <ion-item *ngFor="let data of students">
+          <!-- <ion-icon [name]="item.icon" slot="start"></ion-icon> -->
+          {{data.name}}
+          <div class="item-note" slot="end">
+            {{data.course_name}}
+          </div>
+        </ion-item>
+      </ion-list>
+</ion-content>
